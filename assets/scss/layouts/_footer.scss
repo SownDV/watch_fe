@@ -1,0 +1,77 @@
+footer {
+  background-color: #1e1e1e;
+  padding: 4rem 0;
+  .footer__logo {
+    text-align: center;
+    margin-bottom: 2rem;
+    p {
+      font-size: 3rem;
+      font-family: "Cinzel", serif;
+      color: orange;
+    }
+    span {
+      font-size: 1.7rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+  .footer__slogan {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .footer__title {
+    font-size: 1.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 0 2rem 0;
+  }
+  .footer__list {
+    .footer__item {
+      display: flex;
+      margin-top: 1rem;
+      .item__img {
+        width: 70px;
+        height: 70px;
+        display: block;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .item__info {
+        margin-left: 20px;
+        &--name {
+          font-size: 1.6rem;
+          font-family: "Cinzel", serif;
+          color: #fff;
+          font-weight: 600;
+        }
+        &--price {
+          font-size: 1.5rem;
+          color: #fff;
+          margin-top: 0.7rem;
+          letter-spacing: 0.3rem;
+        }
+      }
+    }
+  }
+  .footer__address {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+  .footer__map {
+    margin-top: 2rem;
+    width: 100%;
+    iframe {
+      width: 100%;
+    }
+  }
+}
+footer.copyright {
+  padding: 2rem 0;
+  background-color: #2e2e2e;
+  h2 {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+}

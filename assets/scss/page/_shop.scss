@@ -1,0 +1,193 @@
+.shop-container {
+  background-color: #242424;
+  padding: 4rem 0;
+  .shop-left {
+    .product-category {
+      #category-accordion {
+        .accordion-button:focus {
+          box-shadow: none;
+          border-color: rgba(0, 0, 0, 0.125);
+        }
+        .accordion-button:not(.collapsed) {
+          box-shadow: none;
+        }
+        .accordion-item {
+          border: none;
+          margin-top: 0.1rem;
+          background-color: #333;
+          .accordion-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.4rem;
+            color: #fff;
+            span {
+              font-size: 1.5rem;
+            }
+            button {
+              width: auto;
+              color: #fff;
+              background-color: transparent;
+              &::after {
+                display: none;
+              }
+            }
+          }
+          .accordion-body {
+            padding: 0 1.4rem 1rem 2.5rem;
+            ul {
+              li {
+                a {
+                  font-size: 1.4rem;
+                  color: #fff;
+                  padding: 1rem 0;
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+        .accordion-button::after {
+          background-image: initial;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+          background-image: initial;
+        }
+      }
+    }
+    .filter-form {
+      margin-top: 4rem;
+      h2 {
+        color: #fff;
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+      .filter-form__form--range-price {
+        position: relative;
+        background-color: #cccccc;
+        width: 100%;
+        height: 5px;
+        border-radius: 5px;
+        margin-top: 3rem;
+        .range-price__progress {
+          position: absolute;
+          height: 100%;
+          left: 0;
+          border-radius: 5px;
+          right: 0;
+          background: orange;
+        }
+        input {
+          -webkit-appearance: none;
+          position: absolute;
+          width: 100%;
+          height: 5px;
+          background-color: transparent;
+          pointer-events: none;
+          padding: 0;
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 10px;
+            height: 12px;
+            background-color: orange;
+            pointer-events: auto;
+          }
+        }
+        .range-price__text {
+          div {
+            position: absolute;
+            color: #fff;
+            font-size: 13px;
+            left: 0;
+            text-align: center;
+            top: 20px;
+          }
+          .text-max {
+            left: unset;
+            right: 0;
+          }
+        }
+      }
+      button[type="submit"] {
+        background-color: transparent;
+        padding: 0.6rem 2rem;
+        margin-top: 5rem;
+        border-color: orange;
+        font-size: 1.5rem;
+        color: orange;
+        transition: 0.5s;
+        &:hover {
+          background-color: orange;
+          color: #fff;
+          border-color: transparent;
+        }
+      }
+    }
+    .related-products {
+      margin-top: 4rem;
+      h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 2rem 0;
+      }
+      .products-list {
+        .product-item {
+          display: flex;
+          margin-top: 2rem;
+          .item__img {
+            width: 70px;
+            height: 70px;
+            display: block;
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+          .item__info {
+            margin-left: 2rem;
+            &--name {
+              font-size: 1.6rem;
+              font-family: "Cinzel", serif;
+              color: #fff;
+              font-weight: 600;
+            }
+            &--price {
+              font-size: 1.5rem;
+              color: #fff;
+              margin-top: 0.7rem;
+              letter-spacing: 0.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shop-right {
+    &__title {
+      h3 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    .product {
+      .product__list {
+        .product__item {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+.search-result {
+  background-color: #242424;
+  padding: 4rem 0;
+  &__title {
+    h3 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  }
+}
